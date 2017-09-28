@@ -2,7 +2,7 @@
  * @Author: nooldey 
  * @Date: 2017-09-28 15:20:03 
  * @Last Modified by: nooldey
- * @Last Modified time: 2017-09-28 16:58:12
+ * @Last Modified time: 2017-09-28 17:48:04
  * @DESC： mongodb 数据查询
  */
 
@@ -61,6 +61,15 @@ MongoClient.connect(url).then(db => {
     }).catch(err => {
         console.log(err)
     }) */
+
+    /* 限制返回的结果总个数 limit(Number) */
+    /* db.collection('members').find().limit(5).toArray().then(res => {
+        console.log(res)
+        db.close()
+    }).catch(err => {
+        console.log(err)
+    }) */
+
 }).catch(err => {
     console.log(err)
 })
