@@ -2,7 +2,7 @@
  * @Author: nooldey 
  * @Date: 2017-09-28 15:20:03 
  * @Last Modified by: nooldey
- * @Last Modified time: 2017-09-29 12:23:44
+ * @Last Modified time: 2017-09-29 15:44:49
  * @DESC： mongodb 数据查询
  */
 
@@ -77,6 +77,12 @@ MongoClient.connect(url).then(db => {
     }).catch(err => {
         console.log(err)
     }) */
+
+    db.collection('members').find({cost:{"$gte":513,"$lte":2048}}).toArray().then(res => {
+        console.log(JSON.stringify(res))
+    }).catch(err => {
+        console.log(err)
+    })
 
 }).catch(err => {
     console.log(err)
