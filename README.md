@@ -51,6 +51,8 @@
 > find().sort(Object)  对搜索结果进行排序,传入值1则按照对应字段升序排序，否则降序
 >
 > find().limit(Number) 限制返回结果的个数
+>
+> find().skip(n).limit(Number) 跳过搜索结果的前n条，一般用于实现分页数据
 
 ### `关联`----join.js
 
