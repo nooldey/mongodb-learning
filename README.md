@@ -52,7 +52,7 @@
 >
 > find().limit(Number) 限制返回结果的个数
 >
-> find().skip(n).limit(Number) 跳过搜索结果的前n条，一般用于实现分页数据
+> find().skip(n).limit(Number) 跳过搜索结果的前n条，一般用于实现分页数据，适用于小数据量，数据量大时查询性能很差...很差... 
 
 ### `关联`----join.js
 

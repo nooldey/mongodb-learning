@@ -2,7 +2,7 @@
  * @Author: nooldey 
  * @Date: 2017-09-28 15:20:03 
  * @Last Modified by: nooldey
- * @Last Modified time: 2017-09-29 12:00:26
+ * @Last Modified time: 2017-09-29 12:23:44
  * @DESC： mongodb 数据查询
  */
 
@@ -70,7 +70,7 @@ MongoClient.connect(url).then(db => {
         console.log(err)
     }) */
 
-    /* 跳过搜索结果的前N条 skip(n)，常用于翻页数据 */
+    /* 跳过搜索结果的前N条 skip(n) 性能一般，不建议使用 */
     /* db.collection('members').find().skip(4).limit(3).toArray().then(res => {
         console.log(JSON.stringify(res))
         db.close()
