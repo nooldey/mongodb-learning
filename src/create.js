@@ -2,7 +2,7 @@
  * @Author: nooldey 
  * @Date: 2017-09-28 15:19:27 
  * @Last Modified by: nooldey
- * @Last Modified time: 2017-09-28 17:45:16
+ * @Last Modified time: 2017-09-29 09:35:06
  * @Desc: mongodb数据库、数据表、数据文档创建
  */
 
@@ -42,7 +42,7 @@ MongoClient.connect(url).then(db => {
     }) */
     
     /* 插入多条数据insertMany() */
-    const newObjs = [{
+    /* const newObjs = [{
             // _id: 158,  //指定_id则按照给定的id进行插入数据;不指定_id,mongodb会默认为每条信息新建一个id.
             name: 'josh',
             cost: 2048
@@ -70,7 +70,7 @@ MongoClient.connect(url).then(db => {
         db.close()
     }).catch(err => {
         console.log(err)
-    })
+    }) */
 }).catch(err => {
     console.log(err)
 })
