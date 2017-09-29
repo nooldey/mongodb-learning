@@ -2,12 +2,12 @@
  * @Author: nooldey 
  * @Date: 2017-09-28 15:19:27 
  * @Last Modified by: nooldey
- * @Last Modified time: 2017-09-29 09:35:06
+ * @Last Modified time: 2017-09-29 17:35:56
  * @Desc: mongodb数据库、数据表、数据文档创建
  */
 
 const MongoClient = require('mongodb').MongoClient
-const url = 'mongodb://localhost:27017/test'
+const url = 'mongodb://nooldey:nooldey@localhost:27017/test'
 
 MongoClient.connect(url).then(db => {
     /* 创建数据库 */
@@ -23,11 +23,17 @@ MongoClient.connect(url).then(db => {
         console.log(err)
     }) */
     /* db.createCollection('posts').then(res => {
-        console.log('created Members Collection!')
+        console.log('created posts Collection!')
         db.close()
     }).catch(err => {
         console.log(err)
     }) */
+    db.createCollection('comments').then(res => {
+        console.log('created comments Collection!')
+        db.close()
+    }).catch(err => {
+        console.log(err)
+    })
 
     /* 插入单条数据insertOne() */
     /* const newObj = {

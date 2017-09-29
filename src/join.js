@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient
-const url = 'mongodb://localhost:27017/test'
+const url = 'mongodb://nooldey:nooldey@localhost:27017/test'
 
 MongoClient.connect(url).then(db => {
     /* 新建另一张表，并与members形成关系型 */

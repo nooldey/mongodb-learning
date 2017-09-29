@@ -2,12 +2,12 @@
  * @Author: nooldey 
  * @Date: 2017-09-28 15:20:03 
  * @Last Modified by: nooldey
- * @Last Modified time: 2017-09-29 15:44:49
+ * @Last Modified time: 2017-09-29 17:33:07
  * @DESC： mongodb 数据查询
  */
 
 const MongoClient = require('mongodb').MongoClient
-const url = 'mongodb://localhost:27017/test'
+const url = 'mongodb://nooldey:nooldey@localhost:27017/test'
 
 MongoClient.connect(url).then(db => {
     /* 搜索符合条件的第一条信息 findOne()*/

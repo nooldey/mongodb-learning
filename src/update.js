@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient
-const url = 'mongodb://localhost:27017/test'
+const url = 'mongodb://nooldey:nooldey@localhost:27017/test'
 
 MongoClient.connect(url).then(db => {
     /* 更新符合条件的首个数据 updateOne() */
