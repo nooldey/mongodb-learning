@@ -2,7 +2,7 @@
  * @Author: nooldey 
  * @Date: 2017-09-28 14:30:31 
  * @Last Modified by: nooldey
- * @Last Modified time: 2017-09-28 17:04:17
+ * @Last Modified time: 2017-09-29 11:27:41
  * @Description: Mongodb 数据、数据表collection、数据库Database删除
  */
 
@@ -28,8 +28,6 @@ MongoClient.connect(url).then(db => {
     }).catch(err => {
         console.log(err)
     }) */
-
-    /* ### 注意：drop()和dropCollection()不是promise ### */
 
     /* 删除数据表 drop()，当返回到的res为true，数据表即被成功删除 */
     /* db.collection('members').drop().then(res => {
